@@ -1,104 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recipe Catalogue</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="navbar-left">
-        <a href=""><h1>Cookpal</h1></a>
-    </div>
-    <div class="navbar-right">
-      <ul>
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>Explore</li></a>
-        <a href="#"><li>Help</li></a>
-        <li><img src="./IMG_20240518_234959.jpg" alt="User Icon"></li>
-      </ul>
-    </div>
-  </header>
-
-  
-
- 
-  <section class="hero">
-    <img src="./top-view-eid-al-fitr-celebration-with-delicious-food.jpg" alt="Featured Recipe">
-    
-  </section>
-
- 
-
-  <!-- Recipe Grid Section -->
-  <header>
-    
-    <h1>Recipe Catalogue</h1>
-    <section class="search-bar ">
-    <input type="text" id="searchBar" placeholder="Search recipes..." onkeyup="filterRecipes()">
-    <button>Search</button>
-</section>
-    <div class="filter-options">
-        <button onclick="toggleType('all')">Show All</button>
-        <button onclick="toggleType('veg')">Show Only Veg</button>
-        <button onclick="toggleType('non-veg')">Show Only Non-Veg</button>
-        <label><input type="radio" name="ratingFilter" onclick="filterByRating(4.5)"> Rating Above 4.5</label>
-        <label><input type="radio" name="ratingFilter" onclick="filterByRating(4.0)"> Rating Below 4.0</label>
-    </div>
-</header>
-
-<main>
-    <div class="recipe-grid" id="recipe-grid">
-        <!-- Cards will be dynamically generated here -->
-    </div>
-</main>
-
-<section class="recipe-container" id="recipeContainer">
-    <!-- Recipe Cards will be dynamically added here -->
-</section>
 
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-column">
-        <h3>Cookpal</h3>
-        <p>Cookpal is a recipe website with an easy-to-use search function, a wide variety of delicious recipes, and an invitation to join our community and cook together!</p>
-        <div class="social-icons">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-            <a href="#">YouTube</a>
-        </div>
-    </div>
-    <div class="footer-column">
-        <h3>Company</h3>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Activity</a></li>
-        </ul>
-    </div>
-    <div class="footer-column">
-        <h3>Resources</h3>
-        <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Use Cases</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Insights</a></li>
-        </ul>
-    </div>
-    <div class="footer-column newsletter">
-        <h3>Newsletter</h3>
-        <input type="email" placeholder="Your Email">
-        <button>Subscribe</button>
-    </div>
-</footer>
 
-  <!-- Left Sidebar -->
+    <div class="container">
+
+<!-- Left Sidebar -->
   <div id="sidebar" class="sidebar">
    
     <a href="#">Home</a>
@@ -107,7 +21,121 @@
   </div>
 
   <button class="open-btn" onclick="toggleSidebar()">☰</button>
+        <div class="item item1">
+          <header class="navbar">
+            <div class="navbar-left">
+                <img href="Cookpal 1.png" src="Cookpal 1.png" alt="Logo">
+            </div>
+            <div class="navbar-right">
+              <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Explore</li></a>
+                <a href="#"><li>Help</li></a>
+                <li><img src="./IMG_20240518_234959.jpg" alt="User Icon"></li>
+              </ul>
+            </div>
+          </header>
+        </div>
 
-  <script src="script.js"></script>
+
+
+        <div class="item item2">
+          <img src="Rectangle 20.png" alt="Featured Recipe">
+        </div>
+
+
+
+
+
+        <div class="item item3">
+
+          <h2>Recipe Catalogue</h2>
+          
+    <div class="search-bar ">
+    <input type="text" id="searchBar" placeholder="Search recipes..." onkeyup="filterRecipes()">
+    <button>Search</button>
+    </div>
+        </div>
+
+
+        <div class="item item4">
+          <div class="filter-options">
+            <button  id="color1" onclick="('all')">Show All</button>
+            <button  id="color2"  onclick="toggleType('veg')">Show Only Veg</button>
+            <button  id="color3"  onclick="toggleType('non-veg')">Show Only Non-Veg</button>
+        </div>
+        </div>
+
+
+
+
+        <div class="item item5">
+
+         <h2 id="h2filter">filter</h2>
+         <form action="/action_page.php">
+          <p>Rating:</p>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">Rating Aboves 4.5</label><br>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label for="css">rating below 4.5</label>
+       </form>
+      
+        </div>
+        <div class="item item6"> 
+          <main>
+            <div class="recipe-grid" id="recipe-grid">
+                <!-- Cards will be dynamically generated here -->
+            </div>
+        </main>
+        
+        <section class="recipe-container" id="recipeContainer">
+            <!-- Recipe Cards will be dynamically added here -->
+        </section>
+        
+
+
+        </div>
+        <div class="item item7">
+
+          <footer class="footer">
+            <div class="footer-column">
+                <h3>Cookpal</h3>
+                <p>Cookpal is a recipe website with an easy-to-use search function, a wide variety of delicious recipes, and an invitation to join our community and cook together!</p>
+                <div class="social-icons">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Activity</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Use Cases</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Insights</a></li>
+                </ul>
+            </div>
+            <div class="footer-column newsletter">
+                <h3>Newsletter</h3>
+                <input type="email" placeholder="Your Email">
+                <button>Subscribe</button>
+            </div>
+        </footer>
+        
+        
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
